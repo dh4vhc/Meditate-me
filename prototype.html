@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> CS220 Planted Prototyping and Evaluation</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="index.html"> Planted: A CS220 Project</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Project</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#aboutus">About US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner-->
+        <header class="masthead bg-primary text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Banner Planted Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/logo.png" alt="Planted Logo">
+                <!-- Icon Divider-->
+            </div>
+        </header>
+
+        <!-- Interactive Prototyping Section-->
+        <section class="page-section-more overview" id = "overview">
+            <div class = "container">
+                <!-- Project Overview Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Interactive Prototyping</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style = "padding-top:15px;"> and Evaluation </h2>
+                <br>
+                <p class = "text-center text-secondary mb-0"> We created interactive prototypes of our interface to conduct usability and heuristic user evaluations</p>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Problem Statement -->
+                <h4 class = "text-secondary"> Wireframe Interactive Prototype </h4>
+                <p class = "text-secondary mb-0"> We created wireframes to conduct usability testing with actual users and to layout the functionality, 
+                                                  organization, and the flow of our interface.  
+                                                  We tested our wireframe prototype with a diverse group of 9 average web users with ages between 25 to 50 and 
+                                                  working in the Education industry.</p>
+
+                <video width="70%" height="420" controls style = "display: block;margin-left:auto;margin-right:auto;margin-top:15px;">
+                    <source src="assets/img/prototype/wireframe.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+
+                <br>
+                <h6 style = "margin-top: 15px;">Design Decisions</h6>
+                The design for our wireframe prototype is primarily based on Design 1 due to its greater learnability with its clear action items and clean interface design. 
+
+                We made a few changes to our initial wireframe design following iterations of user testing. We tested three main tasks during our usability testing: 
+                <ul>
+                    <li> Adding a class into the "Classes" feature </li> 
+                    <li> Navigating to a specific department’s garden </li>
+                    <li> Posting a user post in the Newsfeed of a department </li>
+                </ul> 
+                
+                Two problems arose during pilot testing and we made changes to the design of our wireframe prototype to address those issues:
+                
+                <p><br><span style="color: #03989E"><b>Problem #1. Confusion in adding a class - </b></span> One user reported that she did not know if the class had 
+                been added after she pressed the checkbutton at the top right corner of the interface due to the lack of feedback confirming the completion of the task. Her confusion led her to 
+                add the class twice and actually made an error as she navigated into an already created class and added a new lecture instead of adding a new class. 
+                Furthermore, she had a hard time finding a way to save the class because there were multiple options to choose from: discard the class, save as draft, 
+                or save the class into the system. While the “discard class” and “save class as draft” buttons were located together at the bottom of the form to create a 
+                new class, the “save class” button is a checkbutton located at the top right of the interface. We think that User 1 might have had a hard time finding the 
+                save button because it was not grouped in proximity with the other two buttons that have similar functionality.</p>
+
+                <p><b>Design Solution - </b>To address this design-related flow problem in the action of “adding a class”, we decided to provide users with more feedback within our app by 
+                adding a popup window with the text “Class Successfully Added” while also redirecting the user to the “All Classes” page after the user has added a
+                class. Similarly, we will provide feedback after a user successfully edits a class, adds a new lecture into a class, or edits a lecture. These 
+                changes will notify users that the desired action has been completed and she can move on to the next task. Furthermore, considering User 1’s 
+                confusion between adding a class and adding a lecture, we decided to move the “add a lecture” button from being on the page of a created class to 
+                being inside the form to add or edit a class, so that there is a clearer hierarchy between the two tasks. We also decided to change "classes" into "courses" to 
+                further differentiate between a class and a lecture.
+                </p>               
+
+                <div class="container">
+                    <!-- Grid Items-->
+                    <div class="row justify-content-center">
+                        <!-- Portfolio Item 1-->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                <img class="img-fluid" src="assets/img/prototype/change1.png" alt="Moving the “Add Lecture” button inside the Edit Class Form" style ="height:160px;"/>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item 2-->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                <img class="img-fluid" src="assets/img/prototype/change2.png" alt="Moving the 'Discard Class' Button and Bringing the Save Class Button down" style ="height:160px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p><span style="color: #03989E"><b>Problem #2. Confusion in the purpose of a Newsfeed - </b></span> Our evaluators pointed out that they had a hard time differentiating between 
+                conversing with the avatar vs. conversing through the newsfeed. The fact that each department has their own separate newsfeed also seemed to contradict the 
+                “open concept” of our interface. 
+                </p>
+
+                <p><b> Design Solution - </b>  To address these issues we decided to take out the Newsfeed as its own main feature instead of a subfeature attached 
+                to the garden of each department. Furthermore, instead of having one 
+                newsfeed for each department, we collapsed it to one newsfeed and make it a space that is shared by all professors in the Wellesley community. 
+                </p>
+
+                <div class="container d-flex align-items-center flex-column">
+                    <!-- Banner Planted Image-->
+                    <img class="img-fluid" src="assets/img/prototype/change3.png" alt="Having “News Feed” as the Fourth Main Feature on Its Own" style ="height:160px;">
+                    <!-- Icon Divider-->
+                </div>
+
+                <br>
+
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- InVision Prototype -->
+                <h4 class = "text-secondary"> High-Fidelity Prototype </h4> 
+                <p class = "text-secondary mb-0"> We created our final high-fidelity prototype following multiple design iterations based on feedback 
+                    from empirical and heuristic user evaluations. 
+                </p> 
+                <div class="col text-center" style="margin-top:15px">
+                    <a href="https://invis.io/R410J1X7EFYA" class="btn btn-success" role="button" style="border-color:#03989E;background-color: #03989E;">InVision Prototype</a>
+                </div>               
+
+                <video width="70%" height="420" controls style = "display: block;margin-left:auto;margin-right:auto;margin-top:15px;">
+                    <source src="assets/img/prototype/prototype.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+
+                <h6 style = "margin-top: 25px;">Design Decisions</h6>
+                <ol>
+                    <li><b>Color and Font</b></li>
+                            <p>We chose an analogous color scheme with green as the dominant color, yellow as the secondary color, and teal as the accent color. 
+                            We lowered the saturation of our colors to prevent visual and processing fatigue, and to create a visually vibrant yet harmonious interface, 
+                            as our app aims to serve as a positive and energizing presence that radiates hope and optimism in a world darkened by the pandemic and civil 
+                            unrest. We used Poppins Medium for the headers of our interface, and Poppins Light and Open Sans for text bodies. We chose these fonts because 
+                            of their readability and elegance, and we think that the lightweight of the fonts suit the optimistic and light mood of our interface.<br></p>
+
+                    <li><b>Consistent buttons and text bars</b></li>
+                            <p>We also kept our icons and buttons consistent across our interface to increase learnability, and made sure that all action items are clearly 
+                            visible and laid out on the page.<br></p>
+
+                    <li><b>Simple Graphics and Wellesley Specific Visuals</b></li>
+                           We kept our graphics as clean and simple as possible to reduce the visual load on our users. 
+                           We also added Wellesley-specific visuals to create a greater sense of community. 
+                </ol>
+
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="img-fluid" src="assets/img/prototype/decisions.png" alt="Having “News Feed” as the Fourth Main Feature on Its Own" style = "width:80%;">
+                </div>
+
+                <h6 style = "margin-top: 15px;">InVision Prototype</h6>
+                <p>We created high-fidelity prototypes of all the main features of our interface using invision.<br>
+
+                <br><b><span style="color: #03989E">#1. Login Page and Onboarding Material</b></span><br>
+                This is the login page of our interface. First-time users are brought to the onboarding pages after they create an account 
+                and log into our app. The onboarding pages briefly explain the core features of Planted.
+
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="img-fluid" src="assets/img/prototype/login.png" alt="Login and Onboarding Pages" style = "width:70%;">
+                </div>
+
+                <br><b><span style="color: #03989E">#2. Home Page</b></span><br>
+                Users are brought to the home page after clicking on "Get Started" in the onboarding material. 
+                The homepage of a user is their home department garden, in which they can chat with other users in the same garden using their avatars. 
+                All action items are clearly laid out on the left, and users can navigate to their desired features in the interface simply by clicking on the buttons. 
+
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="img-fluid" src="assets/img/prototype/home.png" alt="Home Page" style = "width:70%;margin-top:10px;">
+                </div>
+
+                <br><b><span style="color: #03989E">#3. Newsfeed</b></span><br>
+                This page layouts the Newsfeed feature of our interface. The Newsfeed is similar to Twitter, where users can send posts for everyone in the community to read. 
+                Users can choose to filter the posts by department so that they are only reading posts from departments of interest or from their own department. 
+                On the top right corner is a button that shows system-generated notifications. 
+
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="img-fluid" src="assets/img/prototype/newsfeed.png" alt="Newsfeed" style = "width:70%;margin-top:10px;">
+                </div>
+
+                <br><b><span style="color: #03989E">#4. Courses Feature</b></span><br>
+                Next up is the courses feature, which allows users to track the progress of their courses. Users are first brought to a page that lists all of the active 
+                courses the user is teaching this semester. Clicking into a course brings the user to the particular page for the course, which shows the progress of the 
+                course in the form of a plant, and student responses to the questions the user sends about a particular lecture. Clicking on view report brings up a summary 
+                of the class. 
+                
+                <br> Users can add a new course by clicking on the plus sign at the top right corner, or edit a course by clicking on the edit button of a 
+                particular class page. Adding a course and editing a course look very similar for internal consistency. Users would click on the add lecture button 
+                to add a new lecture to the course or click on an existing lecture to edit the lecture. They can choose to back out of the process by simply clicking 
+                on the back button. We also provide users with adequate feedback on the actions they perform such as when they add a new course, delete or archive a course, 
+                or save a course as draft. 
+
+                <br> The edit and add lecture forms also look very similar. Users simply specify the questions they want to ask about the lecture, and 
+                provide options for student responses. They can also schedule automatic emails. Feedback is also given following the actions they perform. 
+
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="img-fluid" src="assets/img/prototype/courses.png" alt="Courses Page" style = "width:70%;margin-top:10px;">
+                </div>
+
+                <br><b><span style="color: #03989E">#5. Community Feature</b></span><br>
+                The Community Feature allows users to visit the garden of other departments and converse with users in the same garden using their avatars. 
+                Users are first brought to a map where they can choose their category of interest, browse all departments, or simply search up a particular 
+                department to locate the department they want to visit. 
+
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="img-fluid" src="assets/img/prototype/community.png" alt="Community Page" style = "width:70%;margin-top:10px;">
+                </div>
+
+                <br><b><span style="color: #03989E">#6. User Profile</b></span><br>
+                Users can track their personal growth in their user profile, which displays their basic information, their current courses, and the seeds they 
+                currently own. They can click on a seed to view the challenge 
+                they need to achieve in order to own that seed. The edit button at the top right corner allows users to edit their own avatar. 
+
+                <div class="container d-flex align-items-center flex-column">
+                    <img class="img-fluid" src="assets/img/prototype/profile.png" alt="Profile Page" style = "width:70%;margin-top:10px;">
+                </div>
+                </p>
+            
+
+            <!-- Moving Forward -->
+            <h4 class = "text-secondary"> Conclusions and Moving Forward </h4>
+            <p class = "text-secondary mb-0"> There will never be a 'perfect' design as every design can be improved by further iterations. Here, we conclude 
+                our takeaways from our user evaluations and discuss ideas for future iterations of our interface 
+            </p>    
+
+            <h6 style = "margin-top: 25px;"> Takeaways from usability and heuristic user evaluations</h6>
+            <p>
+                Some of the key takeaways from user evaluations are: 
+                <ul>
+                    <li><b>What seemed obvious to the designers might not be to the users</b></li>
+                            <p> 
+                                When designing the text bar for users to converse with through their avatars in a department garden, we decided 
+                                upon the words "Say Something", which we, as designers, thought to be a straightforward signifier. However, one of our 
+                                evaluators for the heuristic evaluation indicated that the instructions were ambiguous and it wasn't clear to the user 
+                                what they were supposed to do with the text bar.  
+
+                                <br> Earlier on in the process, many of our evaluators were confused about the difference between a class and a lecture.
+                                We learned that it is important to think about headers that would be most intuitive to the user instead of what seemed obvious 
+                                to the designers. We therefore changed "classes" to "courses" to clarify the differences.  
+                            <br></p>
+
+                    <li><b>The importance of giving adequate and prompt feedback</b></li>
+                            <p>
+                                Our users during the first round of evaluation were confused about whether they have successfully added a course or lecture 
+                                due to the lack of immediate feedback. We have addressed this issue by providing users with adequate and prompt feedback following 
+                                each major action they make. Our evaluators for the heuristic evaluation voiced their appreciation for this aspect of our interface, 
+                                as well as the ability for users to back out of a process by clicking on the back button.  
+                            <br></p>
+
+                    <li><b>Sometimes less is better</b></li>
+                        <p>
+                            We initially wanted to create a separate newsfeed for each department, but decided that a centralized newsfeed might be easier for users to 
+                            understand/navigate.
+                        </p>
+
+                </ul>
+            </p>
+
+            <h6 style = "margin-top: 25px;"> Future Iterations </h6>
+            <p>
+                Moving forward, we would like to: 
+                <ul>
+                    <li><b>Re-evaluate the learnability of our interface with older users</b></li>
+                            <p>The evaluators of our interface were skewed towards the younger side. Moving forward, we would like to conduct user testing with 
+                                older and less tech-savy users, specifically the use of avatars for interactions. This is because the ability for users to navigate 
+                                to different departmental gardens and have conversations with other users using avatars is a major part of our application, as we attempt 
+                                to mimic in-person interactions and re-instill a sense of community through this feature. The usability of this feature is hard to predict 
+                                considering that the use of avatars for communication might be a fairly new concept for older professors. Furthermore, since community building is 
+                                one of the main goals of our application, the usability of our app would depend largely on the usability of this feature. 
+                            <br></p>
+
+                    <li><b>Testing prototype with onboarding material</b></li>
+                            <p>During user testing, many of our evaluators failed to understand that departmental gardens are connected with the plants in the 'courses feature', 
+                               as every plant that represent a course that the user teaches is planted in the user's home department garden. To address this issue, we created
+                               onboarding material for first-time users to introduce the concept of the application. Moving forward, we would like to re-evaluate the learnability of our application 
+                               for first-time users after having this onboarding material. 
+                                <br></p>
+
+                    <li><b>Conduct A/B Testing for best call-to-action texts</b></li>
+                            <p>As we mentioned above, one of our users for the heuristic evaluation indicated that the text "Say Something" within the text bar for an avatar
+                                is ambiguous and does not communicate the possible actions. Given the resource, we would like to conduct A/B testing to determine what call-to-action 
+                                text might be best in terms of comprehension and usage rates.  
+                            <br></p>
+
+                    <li><b>More Inclusive and Universally Accessible Design</b></li>
+                        <p>For future iterations, we would also like make our design more inclusive and accessible by perhaps allowing certain parts of the app to be customizable, 
+                            such as color, size of font, etc. 
+                        </p>
+                </ul>
+            </p>
+            </div>
+        </section>
+
+        <!-- Project Milestones Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Project Milestones Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Project Milestones</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <a href = "useranalysis.html">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                            </a>
+                                <img class="img-fluid" src="assets/img/portfolio/plant.png" alt="User Analysis" />
+                                <p class = "text-center image-caption">User Analysis</p>
+                            </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <a href = "ideation.html">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                            </a>
+                            <img class="img-fluid" src="assets/img/portfolio/plant2.png" alt="Ideation" />
+                            <p class = "text-center image-caption">Ideation</p>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <a href = "prototype.html">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                            </a>
+                            <img class="img-fluid" src="assets/img/portfolio/plant3.png" alt="Interactive prototyping & Evaluation" />
+                            <p class = "text-center image-caption">Interactive prototyping & Evaluation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer text-center" id = "aboutus">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Wellesley College, MA, USA
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        
+                    </div> -->
+                    <!-- Footer About Text-->
+                    <div class="col-lg-7">
+                        <h5 class="text-uppercase mb-4">About Us</h4>
+                        <p class="lead mb-0">
+                            Planted is created by <a href="https://jesslyngoh.wixsite.com/aboutme">Jesslyn Goh</a>, Miranda Yang, Liz Murrary
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
